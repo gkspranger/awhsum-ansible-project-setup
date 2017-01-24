@@ -5,3 +5,5 @@
 - debug: msg="group var {{ lh_var }}"
 
 - debug: msg="custom var {{ cstm_var }}"
+
+- debug: msg="all var {{ all_var }}"
