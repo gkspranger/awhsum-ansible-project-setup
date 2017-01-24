@@ -1,0 +1,7 @@
+---
+  
+- debug: msg="hello world"
+
+- debug: msg="group var {{ lh_var }}"
+
+- debug: msg="custom var {{ cstm_var }}"
