@@ -7,3 +7,5 @@
 - debug: msg="custom var {{ cstm_var }}"
 
 - debug: msg="all var {{ all_var }}"
+
+- debug: msg="roles path {{ roles_path | regex_replace('inventories', 'roles') }}"

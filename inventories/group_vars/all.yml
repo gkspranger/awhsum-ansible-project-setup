@@ -1,3 +1,5 @@
 ---
   
 all_var: weeeee .. this works AOK as an ALL var
+
+roles_path: "{{ inventory_dir }}"
