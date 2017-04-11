@@ -1,0 +1,3 @@
+---
+  
+- debug: msg="hello world .. i am going to {{ nagios_action | upper }} Ngaios for my awesome app"

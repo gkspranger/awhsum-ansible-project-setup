@@ -1,9 +1,12 @@
 ---
   
-- debug: msg="hello world"
+- debug: msg="hello world .. i am going to PROVISION an awesome app server"
 
 - debug: msg="group var {{ lh_var }}"
 
 - debug: msg="custom var {{ cstm_var }}"
 
+- debug: msg="vault var {{ vlt_var }}"
+
 - debug: msg="all var {{ all_var }}"
+

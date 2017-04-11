@@ -8,11 +8,17 @@ this isn't so bad because you really should have a dynamic inventory that discov
 # ALL commands executed in the same dir as the ansible.cfg
 
 # example kicking the provision playbook
-ansible-playbook -i inventories/localhost playbooks/provision/example.yml
+ansible-playbook -i inventories/localhost playbooks/construct/provision_awhsumappserver.yml
 
 # example kicking the configure playbook
-ansible-playbook -i inventories/localhost playbooks/configure/example.yml
+ansible-playbook -i inventories/localhost playbooks/construct/configure_awhsumappserver.yml
 
 # example kicking the deploy playbook
-ansible-playbook -i inventories/localhost playbooks/deploy/example.yml
+ansible-playbook -i inventories/localhost playbooks/deploy/awhsum_app.yml
+
+# example kicking the test playbook
+ansible-playbook -i inventories/localhost playbooks/test/awhsum_app.yml
+
+# example kicking the restart playbook
+ansible-playbook -i inventories/localhost playbooks/adhoc/restart_awhsum_app.yml
 ```

@@ -1,0 +1,12 @@
+---
+  
+- debug: msg="hello world .. this is primary role and is a collection of resource roles"
+
+- debug: msg="group var {{ lh_var }}"
+
+- debug: msg="custom var {{ cstm_var }}"
+
+- debug: msg="vault var {{ vlt_var }}"
+
+- debug: msg="all var {{ all_var }}"
+

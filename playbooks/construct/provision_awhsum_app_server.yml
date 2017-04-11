@@ -5,7 +5,8 @@
   gather_facts: False
   become: False
   vars_files:
+    - "{{ inventory_dir }}/vars/bootstrap.yml"
+    - "{{ inventory_dir }}/vars/vault.yml"
     - "{{ inventory_dir }}/vars/custom.yml"
   roles:
-    - provision/ec2
-
+    - "{{ roles_dir }}/action/provision_awhsumapp_server"

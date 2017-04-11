@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  become: False
+  vars_files:
+    - "{{ inventory_dir }}/vars/bootstrap.yml"
+    - "{{ inventory_dir }}/vars/vault.yml"
+    - "{{ inventory_dir }}/vars/custom.yml"
+  roles:
+    - "{{ roles_dir }}/resource/httpd"
+    - "{{ roles_dir }}/awhsum_app_server"

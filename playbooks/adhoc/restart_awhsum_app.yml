@@ -1,0 +1,17 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  become: False
+  vars_files:
+    - "{{ inventory_dir }}/vars/bootstrap.yml"
+    - "{{ inventory_dir }}/vars/vault.yml"
+    - "{{ inventory_dir }}/vars/custom.yml"
+  roles:
+    - role: "{{ roles_dir }}/action/nagios_silence_unsilence"
+      nagios_action: silence
+    - "{{ roles_dir }}/action/restart_awhsumapp"
+    - role: "{{ roles_dir }}/action/nagios_silence_unsilence"
+      nagios_action: unsilence
+    
